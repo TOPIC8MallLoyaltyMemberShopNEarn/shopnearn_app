@@ -191,6 +191,24 @@ class DiskonModernScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                  ExpansionTile(
+                    title: Text(
+                      '3. Minimal pembelian 150rb',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    children: <Widget>[
+                      ListTile(
+                        title: Text(
+                          'Dapatkan potongan 25% hanya dengan minimal pembelian 150 ribu aja!',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
