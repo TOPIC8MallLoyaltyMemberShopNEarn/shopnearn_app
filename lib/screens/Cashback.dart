@@ -175,7 +175,7 @@ class CashbackScreen extends StatelessWidget {
                   ),
                   ExpansionTile(
                     title: Text(
-                      '2. Hanya berlaku untuk transaksi di toko-toko berpartisipasi.',
+                      '2. Hanya berlaku untuk transaksi di toko tertentu.',
                       style: TextStyle(
                         fontSize: 18.0,
                       ),
@@ -184,6 +184,24 @@ class CashbackScreen extends StatelessWidget {
                       ListTile(
                         title: Text(
                           'Syarat dan ketentuan tambahan berlaku.',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  ExpansionTile(
+                    title: Text(
+                      '3. Minimal pembayaran 30rb',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    children: <Widget>[
+                      ListTile(
+                        title: Text(
+                          'Ayo kapan lagi!',
                           style: TextStyle(
                             fontSize: 18.0,
                           ),
