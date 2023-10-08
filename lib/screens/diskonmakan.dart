@@ -175,7 +175,7 @@ class DiskonMakanScreen extends StatelessWidget {
                   ),
                   ExpansionTile(
                     title: Text(
-                      '2. Hanya berlaku di restoran yang berpartisipasi.',
+                      '2. Hanya berlaku di restoran tertentu.',
                       style: TextStyle(
                         fontSize: 18.0,
                       ),
@@ -184,6 +184,42 @@ class DiskonMakanScreen extends StatelessWidget {
                       ListTile(
                         title: Text(
                           'Syarat dan ketentuan tambahan disesuaikan dengan restoran masing-masing.',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  ExpansionTile(
+                    title: Text(
+                      '3. Minimal pembelian 99rb',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    children: <Widget>[
+                      ListTile(
+                        title: Text(
+                          'Syarat dan ketentuan tambahan disesuaikan dengan restoran masing-masing.',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  ExpansionTile(
+                    title: Text(
+                      '4. Promo tidak berlaku untuk delivery',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    children: <Widget>[
+                      ListTile(
+                        title: Text(
+                          'Hanya berlaku untuk dine in.',
                           style: TextStyle(
                             fontSize: 18.0,
                           ),
