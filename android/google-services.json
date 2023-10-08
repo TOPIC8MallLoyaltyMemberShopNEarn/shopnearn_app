@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "221803576697",
+    "project_id": "shopnearn-ad02b",
+    "storage_bucket": "shopnearn-ad02b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221803576697:android:28014abfea470a1d1b03a8",
+        "android_client_info": {
+          "package_name": "com.group8.shopnearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByiZWstiqSvawfsXz3g_jtaLS04Gvyyms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
