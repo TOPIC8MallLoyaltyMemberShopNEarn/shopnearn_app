@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "ShopN'earn",
       theme: ThemeData(
-        primarySwatch: Colors.blue, // Ubah primarySwatch sesuai preferensi Anda
+        primaryColor: const Color.fromARGB(255, 255, 255, 255), // Ubah primarySwatch sesuai preferensi Anda
         fontFamily: 'Montserrat', // Ganti font sesuai preferensi Anda
       ),
       initialRoute: '/',
@@ -44,7 +44,7 @@ class WelcomeScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
-                color: Colors.blue, // Ubah warna teks menjadi biru
+                color: Colors.black, // Ubah warna teks menjadi biru
               ),
             )
           ],
@@ -55,8 +55,8 @@ class WelcomeScreen extends StatelessWidget {
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
               colors: [
-                Colors.blue,
-                Colors.transparent
+                Colors.white,
+                Colors.white,
               ], // Ubah warna latar belakang menjadi biru
             ),
           ),
@@ -64,7 +64,7 @@ class WelcomeScreen extends StatelessWidget {
         centerTitle: true, // Menempatkan judul ke tengah
       ),
       backgroundColor:
-          Colors.blue, // Ubah warna latar belakang body menjadi biru
+          Color.fromARGB(255, 0, 0, 0), // Ubah warna latar belakang body menjadi biru
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -74,7 +74,7 @@ class WelcomeScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 40.0,
                 fontWeight: FontWeight.bold,
-                color: Colors.white, // Ubah warna teks menjadi putih
+                color: Color.fromARGB(255, 255, 255, 255), // Ubah warna teks menjadi putih
               ),
             ),
             SizedBox(height: 16.0),
@@ -82,6 +82,13 @@ class WelcomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/home');
               },
+               style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255, 255, 255, 255)), // Change the button color
+                  foregroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 0, 0, 0)), // Change the text color
+                  overlayColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 156, 155, 155)), // Change the color when pressed
+                  // Add a hover effect
+                  mouseCursor: MaterialStateProperty.all<MouseCursor>(SystemMouseCursors.click),
+                ),
               child: Text("Masuk"),
             ),
             SizedBox(height: 16.0),
@@ -89,6 +96,14 @@ class WelcomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/register');
               },
+
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255, 255, 255, 255)), // Change the button color
+                  foregroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 0, 0, 0)), // Change the text color
+                  overlayColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 156, 155, 155)), // Change the color when pressed
+                  // Add a hover effect
+                  mouseCursor: MaterialStateProperty.all<MouseCursor>(SystemMouseCursors.click),
+                ),
               child: Text("Daftar"),
             ),
           ],
@@ -117,7 +132,7 @@ class HomeScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
-                  color: Colors.blue, // Ubah warna teks menjadi biru
+                  color: Color.fromRGBO(255, 255, 255, 1), // Ubah warna teks menjadi biru
                 ),
               ),
             ],
