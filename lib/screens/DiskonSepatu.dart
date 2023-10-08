@@ -178,6 +178,42 @@ class DiskonSepatuScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                ExpansionTile(
+                    title: Text(
+                      '3. Hanya berlaku di toko tertentu.',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    children: <Widget>[
+                      ListTile(
+                        title: Text(
+                          'Syarat dan ketentuan tambahan disesuaikan dengan toko masing-masing.',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  ExpansionTile(
+                    title: Text(
+                      '4. Minimal pembayaran 300rb.',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                      ),
+                    ),
+                    children: <Widget>[
+                      ListTile(
+                        title: Text(
+                          'Kapan lagi diskon 40% hanya dengan minimal pembelian 300 ribu!',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
               ],
             ),
           ),
